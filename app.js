@@ -8,12 +8,30 @@ btn1.addEventListener("click", () =>{
     let  senha = document.getElementById("password1").value;
 
     // Trabalhando com as validações;
-    if(email1 == "" || !isNaN(email1)){
-        alert("Por favor, insira seu email corretamente!");
-        return;
-    }
-    if(senha == ""){
-        alert("Por favor, insira sua senha!");
+    switch(true){
+        case email == "" || !isNaN(email):
+            alert("Please, insert your email");
+            break;
+
+        case password == "":
+            alert("Please, insert your password!");
+            break;
+
+        case !password.match(/[0-9]/g):
+            alert("One number at least");
+            break;
+
+        case !password.match(/[a-z]/g):
+            alert("At least one lowercase");
+            break;  
+
+        case !password.match(/[A-Z]/g):
+            alert("At least onde one uppercase");
+            break;
+
+        default:
+            alert("Password sent");
+            break;
     }
 
     dados.push({
