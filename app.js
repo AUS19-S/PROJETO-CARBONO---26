@@ -33,6 +33,8 @@ btn1.addEventListener("click", () =>{
             alert("Password sent");
             break;
     }
+    
+    });
 
     dados.push({
         email1: email1,
