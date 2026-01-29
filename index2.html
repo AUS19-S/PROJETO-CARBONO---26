@@ -12,8 +12,8 @@
             <h1>Carbon's Project</h1>
             <hr>
             <div class="content1">
-                <div class="content">Profile</div>
-                <div class="content">Members</div>
+                <div class="content" id="profile">Profile</div>
+                <div class="content" id="members">Members</div>
                 <div class="content">Services</div>
                 <div class="content">Contats</div>
                 <button class="out">Sign Out</button>
@@ -23,7 +23,7 @@
         <div class="main">
             <div class="sidebar1">
             <div class="menu">Home</div>
-                
+
             <div class="otherbar">
                <div class="menu">Notifications</div>
                <div class="menu">Configurations</div>
@@ -33,7 +33,8 @@
 
         <div class="sidebar2">
             <div class="inf">
-                <div class="register">
+                <div class="register" id="regist">
+                     <button id="close1">X</button>
                     <p> <input class="dats" type="text" id="name" placeholder="Please insert new member name"></p>
                     <p> <input class="dats" type="text" name="" id="age" placeholder="Insert new member age"></p>
                     <p>Sex: 
@@ -42,9 +43,10 @@
                 </p>
 
                 <button id="add">Add</button>
-         </div>
+           </div>
 
-            <div class="data">
+            <div class="data" id="dat">
+                <button id="close2">X</button>
                 <h1>Members Data</h1>
                 <p>Descriptions: 
                     <span id="name1"></span>
@@ -55,9 +57,9 @@
                 <button class="btnE">Edit informations</button>
                 <button class="btnR">Remove Member</button>
             </div>
-           </div>
-         </div>    
-        </div>
+            </div>
+         </div>            
+        </div>            
         </div>
     </div>
     
