@@ -110,10 +110,14 @@ p{
     border-radius: 5px;
 }
 .button{
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-top: 450px;
+    margin-top: 70px;
+}
+#des{
+    margin-top: 45px;
 }
 #add{
     background-color: blue;
