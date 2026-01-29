@@ -7,7 +7,8 @@
     <title>Carbon's Project</title>
 </head>
 <body>
-      <div class="program">
+          <div class="program">
+
         <div class="sidebar">
             <h1>Carbon's Project</h1>
             <hr>
@@ -16,7 +17,9 @@
                 <div class="content" id="members">Members</div>
                 <div class="content">Services</div>
                 <div class="content">Contats</div>
-                <button class="out">Sign Out</button>
+
+                <button class="out" id="signOut">Sign Out</button>
+
             </div>
         </div>
 
@@ -37,32 +40,32 @@
                      <button id="close1">X</button>
                     <p> <input class="dats" type="text" id="name" placeholder="Please insert new member name"></p>
                     <p> <input class="dats" type="text" name="" id="age" placeholder="Insert new member age"></p>
-                    <p>Sex: 
+                    <p id="sex">Sex: 
                     Male: <input type="radio" name="sex" id="sexM">
                     Female: <input type="radio" name="sex" id="sexF">
                 </p>
 
                 <button id="add">Add</button>
-           </div>
+
+                </div>
 
             <div class="data" id="dat">
                 <button id="close2">X</button>
                 <h1>Members Data</h1>
-                <p>Descriptions: 
-                    <span id="name1"></span>
+                <p id="des">Descriptions: 
+                    <pre id="name1"></pre>
                 </p>
 
             <div class="button">
-                <button class="btnS">Show the information</button>
-                <button class="btnE">Edit informations</button>
-                <button class="btnR">Remove Member</button>
+                <button class="btnS" id="btnS1">Show the information</button>
+                <button class="btnE" id="btnE1">Edit informations</button>
+                <button class="btnR" id="btnR1">Remove Member</button>
             </div>
             </div>
-         </div>            
-        </div>            
+         </div>
         </div>
+     </div>
     </div>
-    
     <script src="app2.js"></script>
 </body>
 </html>
