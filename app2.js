@@ -2,10 +2,28 @@
 const profile = document.getElementById("profile");
 const members = document.getElementById("members");
 const signOut = document.getElementById("signOut");
+const services = document.getElementById("services");
+const contacts = document.getElementById("contacts");;
+const conf = document.getElementById("conf");
+const message = document.getElementById("message")
+
+document.addEventListener("mouseover", () =>{
+    if(profile.onclick){
+        profile.className = "exibe";
+        members.className = "oculta";
+        services.className = "oculta";
+        contacts.className = "oculta";
+    } else if(members.onclick){
+        profile.className = "oculta";
+        members.className = "exibe";
+        services.className = "oculta";
+        contacts.className = "oculta";
+    }
+})
 
 signOut.addEventListener("click", () =>{
     alert("You have sign out from the page!")
-    window.location = "http://127.0.0.1:5500/index0.html"
+    window.location = "http://127.0.0.1:5500/index.html"
 })
 
 profile.addEventListener("click", () =>{
@@ -82,3 +100,8 @@ btnAddingMembers.addEventListener("click", () =>{
     memberName.focus();
     return;
 });
+
+let notification = document.getElementById("not");
+notification.addEventListener("click", () =>{
+    alert("Hello World!")
+})
