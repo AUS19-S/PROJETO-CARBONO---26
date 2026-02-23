@@ -1,3 +1,4 @@
+
 // Variáveis globais;
 let dados = []
 
@@ -47,5 +48,3 @@ btn1.addEventListener("click", () =>{
         dadosAdquiridos += `Email: ${dados[x].email1}; Senha: ${dados[x].senha} \n`;
     }
     console.log(dadosAdquiridos);
-
-})
