@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon's Project</title>
+    <title>Document</title>
 </head>
 <body>
-          <div class="program">
+    <div class="program">
 
         <div class="sidebar">
             <h1>Carbon's Project</h1>
             <hr>
             <div class="content1">
-                <div class="content" id="profile">Profile</div>
-                <div class="content" id="members">Members</div>
-                <div class="content">Services</div>
-                <div class="content">Contats</div>
+                <div class="content" id="profile">Profile
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="content" id="members">Members
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="content" id="services">Services
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <div class="content" id="contats">Contats
+                    <i class="fa-regular fa-address-book"></i>
+                </div>
 
                 <button class="out" id="signOut">Sign Out</button>
 
@@ -25,17 +34,21 @@
 
         <div class="main">
             <div class="sidebar1">
-            <div class="menu">Home</div>
+            <div class="menu"><i class="fa-solid fa-house"></i></div>
 
             <div class="otherbar">
-               <div class="menu">Notifications</div>
-               <div class="menu">Configurations</div>
-               <div class="menu">Messages</div>
+               <div class="menu"><i class="fa-solid fa-bell" id="not"></i></div>
+               <div class="menu">
+                <i class="fa-solid fa-gear" id="conf"></i>
+               </div>
+               <div class="menu">
+                <i class="fa-solid fa-message" id="message"></i>
+               </div>
             </div>
         </div>
 
         <div class="sidebar2">
-            <div class="inf">
+            <div class="oculta">
                 <div class="register" id="regist">
                      <button id="close1">X</button>
                     <p> <input class="dats" type="text" id="name" placeholder="Please insert new member name"></p>
@@ -66,6 +79,7 @@
         </div>
      </div>
     </div>
+
     <script src="app2.js"></script>
 </body>
 </html>
