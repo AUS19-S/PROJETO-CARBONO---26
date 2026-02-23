@@ -5,7 +5,7 @@
 .program{
     display: flex;
     flex-direction: row;
-    background-color: rgb(181, 200, 211);
+    background-color: rgb   (181, 200, 211);
 }
 .sidebar{
     display: flex;
@@ -61,10 +61,18 @@
     gap: 50px;
 }
 .content{
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     padding: 5px;
 }
-.inf{
+.content:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 5px;
+    
+}
+.oculta{
     display: flex;
     flex-direction: row;
 }
